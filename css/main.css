@@ -1,0 +1,243 @@
+:root{
+	--white:#ffffff;
+	--bg1:#849D8F;
+	--bg2:#8996A6;
+	--bg3:#9D8B84;
+	--black:#323232;
+	--grey:#5A5A5A;
+}
+body{
+	background-color:var(--bg1);
+	font-family: 'Roboto', sans-serif;
+	color:var(--white);
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:var(--white);
+}
+ul.site-navigation > li > a {
+	text-decoration: none;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 18px;
+	color:var(--white);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+ul.site-control > li > a{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	color:var(--white);
+	text-decoration: none;
+}
+.main-header-schedule{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 16px;
+	color:var(--white);
+}
+.schedule-tel{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 22px;
+	line-height: 24px;
+	color:var(--white);
+	text-decoration: none;
+}
+.bread_crumb{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 16px;
+}
+.bread_crumb >li > a{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.slider-header{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+.slider-btn{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 44px;
+	text-decoration: none;
+	color:var(--white);
+}
+.raspberry{
+	background-image: url("../img/raspberry.png");
+	background-repeat: no-repeat;
+}
+.choco{
+	background-image: url("../img/choco.png");
+	background-repeat: no-repeat;
+}
+.promo-header{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+}
+.promo-description{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 22px;
+}
+.promo-btn{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	text-decoration: none;
+	color:var(--white);
+}
+.price{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 45px;
+}
+.price > span{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 35px;
+}
+.products-description{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.products-btn{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+.features{
+	background-image: url("../img/waffle.png");
+}
+.features-header{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	color: var(--black);
+}
+.features-item{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--black);
+}
+.blog{
+	background-image: url(../img/strawberry.png);
+	background-repeat: no-repeat;
+}
+.blog-label{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color:var(--black);
+}
+.blog-link{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color:var(--black);
+	border-bottom: 2px solid var(--black);
+}
+.mailing{
+	background-image: url(../img/mail-bg.png);
+	background-repeat: no-repeat;
+}
+.mailing-description{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--grey);
+}
+.email-btn{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--white);
+}
+.contacts{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--black);
+}
+.adress{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+.contacts{
+	background-image: url("../img/map.png");
+	background-repeat: no-repeat;
+}
+.contacts-tel{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+	color: var(--black);
+}
+.contacts-btn{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+.list_of_pages > li > a{
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+}
+.info-list > li{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 13px;
+	line-height: 18px;
+}
+.info-list > li >a {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.heart{
+	font-style: normal;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 18px;
+}
+.creator{
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+}
+.academy{
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
