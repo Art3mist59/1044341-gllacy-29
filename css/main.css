@@ -17,6 +17,11 @@
 	--cartborder:#CACAC7;
 	--cartbrick:#E84D37;
 	--mailborder:rgba(178, 178, 178, 0.52);
+	--btnshadow:rgba(160, 32, 11, 0.76);
+	--defshadow:rgba(172, 16, 0, 0.64);
+	--actshadow:rgba(172, 16, 0, 1);
+	--btnback:#f26843;
+
 }
 body{
 	font-family: "Roboto", "Arial", sans-serif;
@@ -32,23 +37,20 @@ a{
 	color: var(--white);
 	vertical-align: top;
 	text-decoration: none;
-	text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-	background: #f26843;
-	background: linear-gradient(to bottom, #f26843, #e74a35);
+	text-shadow: 0 2px 5px var(--btnshadow);
+	background: var(--btnback);
 	border-radius: 50px;
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+	box-shadow: 0 2px 2px var(--defshadow);
 	border: none;
 	cursor: pointer;
 }
-.btn:hover {
-	background: linear-gradient(to bottom, #f58669, #ec6f5e);
-	box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+.btn:hover{
+	box-shadow: 0 2px 2px var(--actshadow);
 }
-.btn:active {
-	background: linear-gradient(to bottom, #d84732, #e1613e);
-	box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+.btn:active{
+	box-shadow: inset 0 2px 2px var(--actshadow);
 }
-.reset-list {
+.reset-list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -138,7 +140,7 @@ a{
 .page-body ul{
 	list-style: none;
 }
-.site-navigation a {
+.site-navigation a{
 	text-decoration: none;
 	font-style: normal;
 	font-weight: 700;
@@ -162,7 +164,7 @@ a{
 .sub-link:hover{
 	background-color: var(--white);
 }
-.sub-link:hover >a {
+.sub-link:hover > a{
 	color:var(--almostblack);
 }
 .sub-link:hover .submenu{
@@ -171,7 +173,7 @@ a{
 .submenu>li:hover .submenu{
 	visibility: visible;
 }
-.submenu {
+.submenu{
 	z-index: 1;
 	border-radius: 4px;
 	visibility: hidden;
@@ -190,7 +192,7 @@ a{
 	line-height: 16px;
 	font-weight: normal;
 }
-.submenu li {
+.submenu li{
 	padding-top: 9px;
 	padding-bottom: 8px;
 	font-size: 14px;
@@ -198,7 +200,7 @@ a{
 	line-height: 16px;
 }
 .submenu li:hover{
-background-color: var(--peach);
+	background-color: var(--peach);
 }
 li.submenu-bold{
 	padding-left: 15px;
@@ -269,10 +271,9 @@ li.submenu-bold:hover{
 	border-radius: 4px;
 	border: 1px solid var(--formborder);
 	margin: 20px 15px;
-	padding: 15px;
 	height: 44px;
 	width: 311px;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 14px;
@@ -290,23 +291,23 @@ li.submenu-bold:hover{
 	visibility: visible;
 }
 .enter-text{
-	display: inline-block;
+	display: block;
 	padding: 8px 12px 8px 8px;
 	width: 32px;
 	height: 16px;
 }
 .enter-icon{
-	display: inline-block;
+	display: block;
 	padding-left: 12px;
 	padding-right: 4px;
 	padding-bottom: 6px;
 	padding-top: 6px;
 	width: 20px;
 	height:19px;
-	content: url(../img/enter-icon.svg);
+	content: url("../img/enter-icon.svg");
 }
 .enter:hover .enter-icon{
-	content: url(../img/enter-icon-black.svg);
+	content: url("../img/enter-icon-black.svg");
 }
 .enter:hover .enter-text{
 	color:var(--almostblack);
@@ -350,7 +351,7 @@ li.submenu-bold:hover{
 .btn-enter{
 	grid-column: 1/2;
 	grid-row: 3/4;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -365,7 +366,7 @@ li.submenu-bold:hover{
 	grid-row: 3/4;
 }
 .enter-list a{
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 13px;
@@ -389,7 +390,7 @@ li.submenu-bold:hover{
 	color: var(--almostblack);
 }
 .cart-active .cart-icon{
-	content: url(../img/cart-black.svg);
+	content: url("../img/cart-black.svg");
 }
 .cart:hover{
 	background-color: var(--white);
@@ -398,7 +399,7 @@ li.submenu-bold:hover{
 	color: var(--almostblack);
 }
 .cart:hover .cart-icon{
-	content: url(../img/cart-black.svg);
+	content: url("../img/cart-black.svg");
 }
 .cart:hover .cart-inside{
 	visibility: visible;
@@ -408,7 +409,7 @@ li.submenu-bold:hover{
 }
 .cart-icon{
 	padding:6px 7px 6px 16px;
-	content: url(../img/cart-icon.svg);
+	content: url("../img/cart-icon.svg");
 }
 .cart-inside{
 	display: flex;
@@ -430,22 +431,20 @@ li.submenu-bold:hover{
 	border-bottom: 1px solid var(--cartborder);
 	border-spacing: 10px;
 }
-.cart-table td, .cart-table th
-{
+.cart-table td, .cart-table th{
 	padding: 10px;
 }
 .cart-price{
 	align-self: flex-end;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 15px;
 	line-height: 16px;
-
 }
 a.cart-btn{
 	padding: 13px 15px;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 18px;
@@ -503,7 +502,7 @@ a.cart-btn{
 .select select{
 	border-radius: 20px;
 	color: var(--white);
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -526,7 +525,7 @@ a.cart-btn{
 }
 
 .fat-group{
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -541,7 +540,7 @@ a.cart-btn{
 	justify-content: space-between;
 }
 .dop-group{
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -576,7 +575,7 @@ a.cart-btn{
 	align-items: center;
 	flex-direction: column;
 }
-.slider-list {
+.slider-list{
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -599,7 +598,7 @@ a.cart-btn{
 	font-size: 32px;
 	line-height: 44px;
 }
-.slider-controls {
+.slider-controls{
 	position: absolute;
 	width: 79px;
 	height: 21px;
@@ -608,7 +607,7 @@ a.cart-btn{
 	display: flex;
 	justify-content: space-between;
 }
-.slider-controls button {
+.slider-controls button{
 	padding: 0;
 	width: 21px;
 	height: 21px;
@@ -617,13 +616,13 @@ a.cart-btn{
 	border-radius: 50%;
 	cursor: pointer;
 }
-.slider-controls .current {
+.slider-controls .current{
 	background-color: var(--white);
 }
-.slide {
+.slide{
 	display: none;
 }
-.slide-current {
+.slide-current{
 	display: block;
 }
 .promo{
@@ -663,7 +662,7 @@ a.cart-btn{
 	line-height: 41px;
 }
 p.promo-description{
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	padding-bottom: 42px;
 	font-style: normal;
 	font-weight: bold;
@@ -713,7 +712,7 @@ p.promo-description{
 	visibility: visible;
 	margin-top: 10px;
 }
-.products-item:hover {
+.products-item:hover{
 	background-color: var(--transwhite);
 	padding: 6px 13px 21px 13px;
 }
@@ -725,7 +724,7 @@ p.promo-description{
 	padding: 0px 13px;
 	height: 61px;
 	background-color: var(--white);
-	background-image: url(../img/hit.svg);
+	background-image: url("../img/hit.svg");
 	content: "";
 	background-position: center;
 	background-repeat: no-repeat;
@@ -797,7 +796,7 @@ p.promo-description{
 	color: var(--dark-grey);
 }
 .img{
-	display:inline-block;
+	display:block;
 	margin: 0;
 	padding: 0;
 	width: 49px;
@@ -809,7 +808,7 @@ p.promo-description{
 }
 .ice-text{
 	align-content: center;
-	display: inline-block;
+	display: block;
 	width: 484px;
 	height: 55px;
 }
@@ -1005,7 +1004,7 @@ p.promo-description{
 .creator-text{
 	width: 190px;
 	height: 12px;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 12px;
@@ -1038,13 +1037,12 @@ p.promo-description{
 	padding-top: 20px;
 	padding-bottom: 27px;
 	padding-left: 24px
-
 }
 .feedback-email,.feedback-name{
 	padding: 16px 0px 16px 14px;
 	width: 253px;
 	height: 12px;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -1055,7 +1053,7 @@ p.promo-description{
 }
 .feedback-btn{
 	align-self:flex-end;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	display: flex;
 	align-items: center;
 	font-style: normal;
@@ -1069,7 +1067,7 @@ p.promo-description{
 .comment{
 	width: 422px;
 	height: 154px;
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -1078,6 +1076,12 @@ p.promo-description{
 .curent{
 	background-color:var(--brick);
 }
-.curent a {
+.curent a{
 	border:none;
+}
+.fir{
+	padding: 0px 8px;
+}
+.hidden{
+	display: none;
 }
